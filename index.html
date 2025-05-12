@@ -20,7 +20,7 @@
     }
   </script>
 
-  <!-- Optional overrides -->
+  <!-- Your overrides (can stay empty) -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <!-- Google Analytics (replace G-XXXXXXX) -->
@@ -32,52 +32,109 @@
     gtag('config', 'G-XXXXXXX');
   </script>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="antialiased text-gray-800">
 
-  <!-- Language selector -->
-  <div class="fixed top-4 right-4">
-    <select onchange="switchLanguage(this.value)"
-            class="px-3 py-1 border border-gray-300 rounded bg-white">
-      <option value="en">EN</option>
-      <option value="he">HE</option>
-      <option value="fr">FR</option>
-    </select>
-  </div>
+  <!-- HEADER: logo + story + main CTA -->
+  <header class="bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between">
+      <img src="assets/img/magen-icon-rect.png"
+           alt="MagenTravel Logo"
+           class="w-40 mb-4 md:mb-0" />
 
-  <!-- Hero (no more full-screen) -->
-  <main class="flex flex-col items-center py-16 px-6 bg-gradient-to-r from-brandBlue to-indigo-600 text-white">
-    <img src="assets/img/magen-icon-rect.png"
-         alt="MagenTravel Logo"
-         class="w-32 mb-6 mx-auto"/>
+      <div class="text-center md:text-left md:flex-1 md:ml-8">
+        <!-- Replace with your product story text -->
+        <p class="text-lg text-gray-700">
+          <!-- PRODUCT STORY GOES HERE -->
+          In a time when antisemitism is once again on the rise, silence is not an option. MagenTravel is a community-powered platform to ensure every Jewish traveler can explore safely—anywhere in the world.
+        </p>
+      </div>
 
-    <!-- Title -->
-    <h1 id="title"
-        class="text-4xl md:text-5xl font-extrabold text-center max-w-3xl leading-tight">
-    </h1>
+      <a href="https://docs.google.com/forms/…"
+         target="_blank"
+         class="mt-6 md:mt-0 inline-block px-6 py-3 bg-brandBlue text-white font-semibold rounded-lg shadow hover:bg-brandDark">
+        Pre-Register Now
+      </a>
+    </div>
+  </header>
 
-    <!-- Lifted CTA -->
-    <a id="pre-register-button"
-       href="https://docs.google.com/forms/…"
-       target="_blank"
-       class="mt-6 inline-block px-8 py-3 bg-white text-brandBlue font-semibold rounded-lg shadow hover:bg-gray-100 text-lg">
-      <span id="button-text"></span>
-    </a>
-  </main>
-
-  <!-- About / Product copy (wider text) -->
-  <section id="about" class="py-12 px-6 bg-white">
-    <div class="max-w-4xl mx-auto space-y-6 text-gray-800">
-      <div id="text" class="space-y-4"></div>
+  <!-- SECTION 1: Feature + CTA (text left) -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+        <h2 class="text-2xl font-bold">Real-Time Ratings</h2>
+        <p class="mt-4 text-gray-700">
+          Every user can rate places, drivers, restaurants or hotels on how Jewish-friendly they are—so you always know what to expect.
+        </p>
+        <a href="https://docs.google.com/forms/…"
+           target="_blank"
+           class="mt-6 inline-block px-6 py-3 bg-brandBlue text-white font-semibold rounded-lg shadow hover:bg-brandDark">
+          Pre-Register
+        </a>
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0">
+        <!-- Optional illustration or leave blank -->
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="py-8 text-center text-sm text-gray-600">
-    <p id="footer"></p>
-  </footer>
+  <!-- SECTION 2: Feature + CTA (text right) -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row-reverse items-center">
+      <div class="md:w-1/2">
+        <h2 class="text-2xl font-bold text-right md:text-right">Live Field Reports</h2>
+        <p class="mt-4 text-gray-700 text-right md:text-right">
+          All reports and experiences from the field are instantly shared in our community database—so you travel informed.
+        </p>
+        <div class="flex justify-center md:justify-end">
+          <a href="https://docs.google.com/forms/…"
+             target="_blank"
+             class="mt-6 inline-block px-6 py-3 bg-brandBlue text-white font-semibold rounded-lg shadow hover:bg-brandDark">
+            Pre-Register
+          </a>
+        </div>
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0">
+        <!-- Optional illustration or leave blank -->
+      </div>
+    </div>
+  </section>
 
-  <!-- Translations loader & initializer -->
-  <script src="assets/js/translation.js"></script>
-  <script src="assets/js/main.js"></script>
+  <!-- SECTION 3: Feature + CTA (text left) -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+        <h2 class="text-2xl font-bold">Location-Based Alerts</h2>
+        <p class="mt-4 text-gray-700">
+          Whenever someone nearby reports an antisemitic or dangerous incident, you get an immediate alert with help resources.
+        </p>
+        <a href="https://docs.google.com/forms/…"
+           target="_blank"
+           class="mt-6 inline-block px-6 py-3 bg-brandBlue text-white font-semibold rounded-lg shadow hover:bg-brandDark">
+          Pre-Register
+        </a>
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0">
+        <!-- Optional illustration or leave blank -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brandBlue text-white">
+    <div class="max-w-6xl mx-auto px-6 py-8 text-center space-y-2">
+      <p>© 2025 MagenTravel. All rights reserved.</p>
+      <p>Email: <a href="mailto:contact@magentravel.com" class="underline">contact@magentravel.com</a></p>
+      <p>
+        LinkedIn:
+        <a href="https://linkedin.com/in/your-profile" target="_blank" class="underline">
+          linkedin.com/in/your-profile
+        </a>
+      </p>
+    </div>
+  </footer>
+  <!-- 1. Load translations.js first -->
+  <script defer src="assets/js/translations.js"></script>
+  <!-- 2. Then load main.js which defines switchLanguage, applyTranslations, and kicks off switchLanguage('en') -->
+  <script defer src="assets/js/main.js"></script>
 </body>
 </html>
