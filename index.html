@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MagenTravel – Global Jewish Safety</title>
 
   <!-- Tailwind Play CDN + custom colors -->
@@ -21,7 +21,7 @@
   </script>
 
   <!-- Optional overrides -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
 
   <!-- Google Analytics (replace G-XXXXXXX) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
@@ -44,24 +44,30 @@
     </select>
   </div>
 
-  <!-- Hero -->
-  <main class="flex flex-col items-center justify-center min-h-screen px-6 py-16 bg-gradient-to-r from-brandBlue to-indigo-600 text-white">
+  <!-- Hero (no more full-screen) -->
+  <main class="flex flex-col items-center py-16 px-6 bg-gradient-to-r from-brandBlue to-indigo-600 text-white">
     <img src="assets/img/magen-icon-rect.png"
          alt="MagenTravel Logo"
-         class="w-32 mb-6 mx-auto">
-    <h1 id="title" class="text-5xl font-extrabold text-center"></h1>
+         class="w-32 mb-6 mx-auto"/>
+
+    <!-- Title -->
+    <h1 id="title"
+        class="text-4xl md:text-5xl font-extrabold text-center max-w-3xl leading-tight">
+    </h1>
+
+    <!-- Lifted CTA -->
     <a id="pre-register-button"
        href="https://docs.google.com/forms/…"
        target="_blank"
-       class="mt-8 inline-block px-8 py-3 bg-white text-brandBlue font-semibold rounded-lg shadow hover:bg-gray-100">
+       class="mt-6 inline-block px-8 py-3 bg-white text-brandBlue font-semibold rounded-lg shadow hover:bg-gray-100 text-lg">
       <span id="button-text"></span>
     </a>
   </main>
 
-  <!-- About / Product copy -->
-  <section id="about" class="py-12 px-6">
-    <div class="max-w-3xl mx-auto space-y-6 text-gray-800">
-      <div id="text"></div>
+  <!-- About / Product copy (wider text) -->
+  <section id="about" class="py-12 px-6 bg-white">
+    <div class="max-w-4xl mx-auto space-y-6 text-gray-800">
+      <div id="text" class="space-y-4"></div>
     </div>
   </section>
 
