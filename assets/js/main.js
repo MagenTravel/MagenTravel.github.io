@@ -1,16 +1,21 @@
-// assets/js/main.js
-
 function switchLanguage(lang) {
   document.documentElement.lang = lang;
-  document.documentElement.dir  = (lang === 'he' ? 'rtl' : 'ltr');
-  if (window.translations[lang]) {
-    window.applyTranslations(lang);
+  document.documentElement.dir = lang === 'he' ? 'rtl' : 'ltr';
+  if (translations[lang]) {
+    applyTranslations(lang);
   } else {
-    window.loadTranslations(lang);
+    loadTranslations(lang);
   }
 }
 
-// Wait for DOM, then load default
-document.addEventListener("DOMContentLoaded", () => {
-  switchLanguage("en");
-});
+function applyTranslations(lang) {
+  const t = translations[lang];
+  if (!t) return;
+  document.getElementById("title").innerText             = t.title;
+  document.getElementById("text").innerHTML              = t.text;
+  document.getElementById("footer").innerText            = t.footer;
+  document.getElementById("button-text").innerText       = t.buttonText;
+}
+
+// Load default language
+switchLanguage('en');
