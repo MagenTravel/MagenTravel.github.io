@@ -7,6 +7,12 @@ body {
   line-height: 1.6;
 }
 
+/* Any small overrides—you can leave this empty if Tailwind covers all */
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .language-switcher {
   position: fixed;
   top: 1em;
