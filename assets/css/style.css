@@ -1,45 +1,21 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 2em;
-  background: #f5f7fa;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Any small overrides—you can leave this empty if Tailwind covers all */
+/* Tailwind resets the body margin/padding; if any extra overrides are needed, do it here */
 body {
   margin: 0;
   padding: 0;
 }
 
-.language-switcher {
-  position: fixed;
-  top: 1em;
-  right: 1em;
+/* Fade-in animation used by .animate-fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.language-switcher button {
-  margin-left: 0.5em;
-  padding: 0.5em 1em;
-  border: none;
-  background-color: #0057b7;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.language-switcher button:hover {
-  background-color: #003f88;
-}
-
-main {
-  max-width: 800px;
-  margin: auto;
-}
-
-footer {
-  margin-top: 4em;
-  text-align: center;
-  color: #666;
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out both;
 }
