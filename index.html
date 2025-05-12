@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MagenTravel – Global Jewish Safety</title>
 
   <!-- Tailwind Play CDN + custom colors -->
@@ -17,11 +17,11 @@
           }
         }
       }
-    };
+    }
   </script>
 
-  <!-- Optional overrides (can be empty) -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Your small overrides (can remain empty) -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
   <!-- Google Analytics (replace G-XXXXXXX) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
@@ -32,35 +32,43 @@
     gtag('config', 'G-XXXXXXX');
   </script>
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
-  <!-- Language selector dropdown -->
-  <header class="flex justify-end p-4">
-    <select id="lang-select" class="border border-gray-300 rounded px-3 py-2">
-      <option value="en">English</option>
-      <option value="he">עברית</option>
-      <option value="fr">Français</option>
+  <!-- Language dropdown -->
+  <div class="fixed top-4 right-4">
+    <select id="language-select"
+            class="bg-white border border-gray-300 rounded px-3 py-1 shadow focus:outline-none">
+      <option value="en">EN</option>
+      <option value="he">HE</option>
+      <option value="fr">FR</option>
     </select>
-  </header>
+  </div>
 
-  <!-- Hero / Prelaunch section -->
-  <main class="flex flex-col items-center justify-center min-h-screen px-6">
-    <img src="assets/img/magen-icon-rect.png" alt="MagenTravel Logo" class="w-32 mb-6">
-    <h1 id="title" class="text-4xl font-bold mb-4"></h1>
-    <div id="text" class="max-w-xl text-center mb-8 space-y-4"></div>
-    <button id="pre-register-btn"
-            onclick="window.open('https://forms.gle/s3XTNU2fCi29mLNx5', '_blank')"
-            class="px-6 py-3 bg-brandBlue text-white font-semibold rounded-lg hover:bg-brandDark">
+  <!-- Hero / Prelaunch -->
+  <main class="flex-grow flex flex-col items-center justify-center px-6 text-center">
+    <img src="assets/img/magen-icon-rect.png"
+         alt="MagenTravel Logo"
+         class="w-32 mb-6 mx-auto" />
+
+    <h1 id="title"
+        class="text-5xl font-extrabold leading-tight"></h1>
+
+    <div id="text"
+         class="mt-6 max-w-2xl space-y-4 text-lg"></div>
+
+    <a id="cta-button"
+       href="#"
+       class="mt-8 inline-block px-8 py-3 bg-brandBlue text-white font-semibold rounded-lg shadow hover:bg-brandDark transition">
       Pre-Register Now
-    </button>
+    </a>
   </main>
 
   <!-- Footer -->
-  <footer class="text-center py-8 text-sm text-gray-600">
+  <footer class="py-6 text-center text-sm text-gray-600">
     <p id="footer"></p>
   </footer>
 
-  <!-- Translation scripts -->
+  <!-- Translations & language logic -->
   <script src="assets/js/translations.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
