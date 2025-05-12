@@ -1,6 +1,23 @@
+// assets/lang/fr.json
 {
-  "title": "🔵 MagenTravel – Technologie pour la sécurité juive mondiale 🔵",
-  "buttonText": "Pré-inscription",
-  "text": "<p>À une époque où l'antisémitisme progresse, le silence n'est pas une option.</p><p><strong>MagenTravel</strong> est une plateforme communautaire numérique visant à sécuriser les voyages des Juifs – partout dans le monde.</p><p>Nous pensons que la sécurité juive doit être accessible, fondée sur les données et communautaire. C'est pourquoi nous avons créé un système qui permet :</p><ul><li>✅ Évaluations en temps réel – Les utilisateurs peuvent noter lieux, conducteurs, restaurants ou hôtels selon leur accueil des Juifs.</li><li>✅ Rapports terrain en direct – Tous les rapports et expériences sont stockés dans une base de données et visibles de tous.</li><li>✅ Alertes géolocalisées – Lorsqu'un utilisateur signale un incident antisémite ou dangereux, tous les passants reçoivent immédiatement une alerte avec infos et accès à l'aide.</li><li>✅ Connexions aux communautés juives locales – Trouvez facilement lieux casher, hébergements Shabbat et centres d'aide.</li></ul><p><strong>Notre vision :</strong> faire de MagenTravel une application mobile mondiale pour chaque voyageur juif, où qu'il soit.</p><p>🛡 Nous ne faisons que commencer – rejoignez-nous !</p><p>Nous sollicitons les organisations et partenaires soucieux de la sécurité juive pour nous accompagner.</p><p>Vos idées, retours, collaborations et suggestions sont les bienvenus.</p><p>💬 Suivez-nous, contactez-nous, partagez – ensemble, nous pouvons faire la différence.</p><p>MagenTravel – Savoir. Signaler. Protéger.</p><p><em>#MagenTravel #SécuritéJuive #TechForGood #LutterContreLAntisémitisme #CommunautéGlobale #VoyagerEnSécurité</em></p>",
-  "footer": "MagenTravel – Savoir. Signaler. Protéger."
+  "headerStory": "À une époque où l'antisémitisme progresse, le silence n'est pas une option. MagenTravel est une plateforme communautaire conçue pour garantir à tout voyageur juif une expérience de voyage en toute sécurité—partout dans le monde.",
+  "headerCTA": "Pré-inscription",
+
+  "feature1Title": "Évaluations en temps réel",
+  "feature1Text": "Chaque utilisateur peut noter des lieux, des conducteurs, des restaurants ou des hôtels selon leur accueil des Juifs—pour que vous sachiez toujours à quoi vous attendre.",
+  "feature1CTA": "Pré-inscription",
+
+  "feature2Title": "Rapports terrain en direct",
+  "feature2Text": "Tous les rapports et expériences du terrain sont immédiatement partagés dans notre base de données communautaire—pour que vous voyagiez informé.",
+  "feature2CTA": "Pré-inscription",
+
+  "feature3Title": "Alertes géolocalisées",
+  "feature3Text": "Lorsque quelqu’un à proximité signale un incident antisémite ou dangereux, vous recevez une alerte immédiate avec des informations sur les ressources d’aide.",
+  "feature3CTA": "Pré-inscription",
+
+  "footerCopyright": "© 2025 MagenTravel. Tous droits réservés.",
+  "footerEmailLabel": "Email",
+  "footerEmail": "contact@magenttravel.com",
+  "footerLinkedInLabel": "LinkedIn",
+  "footerLinkedIn": "https://linkedin.com/in/your-profile"
 }
