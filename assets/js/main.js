@@ -47,7 +47,7 @@ function renderFeatures(features, cta) {
     section.className = `flex flex-col md:flex-row ${reverse ? 'animate-slide-right section-right' : 'animate-slide-left section-left'} items-center bg-white rounded-xl shadow-lg p-8 mb-8 transition-transform duration-500 transform animate-fade-in hover:-translate-y-2 hover:shadow-2xl section`;
 
     const textDiv = document.createElement("div");
-    textDiv.className = "md:w-1/2 space-y-4 " + (reverse ? "text-right" : "");
+    textDiv.className = "md:w-1/2 space-y-4 mb-3" + (reverse ? "text-right" : "");
 
     const titleEl = document.createElement("h2");
     titleEl.className = "text-2xl font-bold";
