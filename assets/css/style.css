@@ -67,16 +67,12 @@ body {
 .section-left {
   float: left; /* Keep left sections aligned to the left side */
   margin-left: 0; /* Ensure it starts exactly at the left edge */
-  display:flex;
-  flex-direction:row;
 }
 
 /* Position right sections on the right */
 .section-right {
   float: right; /* Keep right sections aligned to the right side */
   margin-right: 0; /* Ensure it starts exactly at the right edge */
-  display:flex;
-  flex-direction:row-reverse;
   /* This is the key part! Positioning right sections at the right edge */
 }
 
