@@ -31,17 +31,20 @@ function applyTranslations(lang) {
   }
 }
 
-function renderFeatures(features,cta) {
+
+function renderFeatures(features, cta) {
   const container = document.getElementById("featuresContainer");
   container.innerHTML = "";
 
   features.forEach((feature, index) => {
-    const reverse = index % 2 !== 0;
+    const reverse = index % 2 !== 0;  // Toggle between left and right
     const hasCTA = index % 2 === 1;
     const icon = feature.icon || "🛡️"; // fallback icon
 
     const section = document.createElement("div");
-    section.className = `flex flex-col md:flex-row${reverse ? '-reverse' : ''} items-center bg-white rounded-xl shadow-lg p-8 mb-8 transition-transform duration-500 transform animate-fade-in hover:-translate-y-2 hover:shadow-2xl`;
+    
+    // Add classes for sliding from left or right, and positioning left or right
+    section.className = `flex flex-col md:flex-row ${reverse ? 'animate-slide-right section-right' : 'animate-slide-left section-left'} items-center bg-white rounded-xl shadow-lg p-8 mb-8 transition-transform duration-500 transform animate-fade-in hover:-translate-y-2 hover:shadow-2xl section`;
 
     const textDiv = document.createElement("div");
     textDiv.className = "md:w-1/2 space-y-4 " + (reverse ? "text-right" : "");
@@ -76,6 +79,34 @@ function renderFeatures(features,cta) {
     container.appendChild(section);
   });
 }
+
+
+// Intersection Observer to trigger animations when sections are in view
+function observeElement(element) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && entry.target.getAttribute("data-animated") === "false") {
+        // Add class to trigger animation only if not already animated
+        entry.target.classList.add("in-view");
+        entry.target.setAttribute("data-visible", "true");
+        entry.target.setAttribute("data-animated", "true"); // Mark as animated
+
+        // Apply animation styles after the observer triggers
+        entry.target.style.opacity = '1';
+        const isReversed = entry.target.getAttribute("data-reverse") === "true";
+        // Slide based on direction
+        if (isReversed) {
+          entry.target.style.transform = 'translateX(0)';  // Slide in from right
+        } else {
+          entry.target.style.transform = 'translateX(0)';  // Slide in from left
+        }
+      }
+    });
+  }, { threshold: 0.3 }); // Trigger when 30% of the element is visible
+
+  observer.observe(element);
+}
+
 
 
 function switchLanguage(lang) {
