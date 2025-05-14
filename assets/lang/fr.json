@@ -1,27 +1,87 @@
 {
-  "headerStory": "À une époque où l'antisémitisme est de nouveau en hausse, le silence n'est pas une option. MagenTravel est une plateforme communautaire qui garantit à chaque Juif de pouvoir voyager en sécurité — partout dans le monde.",
-  "headerCTA": "Préinscrivez-vous dès maintenant",
-  "CTA": "Préinscription",
+  "headerStory": "Dans un monde où l'antisémitisme est de nouveau en hausse, le silence n'est pas une option. MagenTravel est une plateforme propulsée par la communauté qui garantit que chaque Juif puisse voyager en toute sécurité, partout dans le monde.",
+  "headerCTA": "Pré-inscrivez-vous maintenant",
+  "CTA": "Pré-inscrivez-vous",
   "features": [
     {
-      "title": "Évaluations en temps réel",
-      "text": "Les utilisateurs peuvent évaluer les lieux, chauffeurs, restaurants ou hôtels selon leur accueil des Juifs. Que vous cherchiez une synagogue à proximité, un restaurant avec des options casher ou un quartier sûr pour vous promener, les notations de la communauté vous aident à prendre les bonnes décisions.",
+      "title": "Carte Interactive",
+      "text": "Une carte interactive vous permet de déplacer, zoomer et explorer des endroits dans le monde entier. Votre position en direct est indiquée par une étoile de David noire sur un fond jaune flou.",
+      "icon": "🗺️"
+    },
+    {
+      "title": "Évaluations en Temps Réel",
+      "text": "Les utilisateurs peuvent évaluer des lieux, des chauffeurs, des restaurants ou des hôtels en fonction de leur convivialité pour les Juifs, vous permettant de savoir à quoi vous attendre.",
       "icon": "⭐"
     },
     {
-      "title": "Rapports terrain en direct",
-      "text": "Les témoignages et expériences partagés en temps réel enrichissent notre base de données communautaire. Ces rapports vous permettent de découvrir des lieux accueillants ou, au contraire, d’éviter ceux présentant des risques — grâce à des informations fiables venues du terrain.",
+      "title": "Rapports en Direct",
+      "text": "Les expériences et les alertes envoyées par la communauté sont immédiatement disponibles pour vous aider à prendre des décisions éclairées.",
       "icon": "📝"
     },
     {
-      "title": "Alertes géolocalisées",
-      "text": "Lorsque quelqu’un à proximité signale un incident dangereux ou antisémite, vous recevez une alerte instantanée. Grâce à ces notifications, vous pouvez adapter vos déplacements, rester informé et accéder à des ressources utiles ou contacts locaux immédiatement.",
+      "title": "Alertes Basées sur la Localisation",
+      "text": "Si quelqu'un dans les environs signale un incident dangereux ou antisémite, vous recevrez une alerte avec des sources d'aide. L'alerte apparaît sous forme d'icône de danger avec une zone d'onde de choc visible pour les utilisateurs dans un rayon de 1 km.",
       "icon": "📍"
     },
     {
-      "title": "Discussions en direct",
-      "text": "Des discussions instantanées sont disponibles selon votre pays, votre localisation, ou encore les besoins liés aux alertes ou à l’organisation de prières (minyan). Cela permet une coordination rapide, du soutien en temps réel et un véritable esprit communautaire — où que vous soyez.",
+      "title": "Demandes de Minyan en Direct",
+      "text": "Soumettez ou rejoignez un minyan en temps réel. Les alertes restent affichées pendant 30 minutes ou jusqu'à ce que 10 personnes se soient inscrites.",
+      "icon": "🕍"
+    },
+    {
+      "title": "Rapports Détaillés des Lieux",
+      "text": "Ajoutez et consultez des rapports détaillés sur des lieux tels que des taxis, des restaurants, des hôtels, des maisons, etc. Chaque rapport est accompagné d'une première évaluation et d'un horodatage.",
+      "icon": "🏠"
+    },
+    {
+      "title": "Recherche Intelligente",
+      "text": "Recherchez n'importe quel détail — nom, téléphone, adresse ou type — avec détection automatique et suggestions en temps réel. La carte se recentre automatiquement sur les résultats et affiche des informations détaillées.",
+      "icon": "🔍"
+    },
+    {
+      "title": "Annuaire de Taxis",
+      "text": "Passez en mode taxi pour explorer les taxis classés par ville. Vous pouvez filtrer par note ou commentaire.",
+      "icon": "🚕"
+    },
+    {
+      "title": "Filtres et Exploration",
+      "text": "Filtrez les lieux par catégorie, niveau d'antisémitisme ou distance. Un curseur de distance vous aide à contrôler la portée de votre recherche.",
+      "icon": "🎛️"
+    },
+    {
+      "title": "Commentaires Communautaires",
+      "text": "Chaque lieu et revue comprend des commentaires avec horodatage. Les évaluations sont codées par couleur : vert (positif), jaune (neutre), rouge (négatif).",
       "icon": "💬"
+    },
+    {
+      "title": "Zones Dangereuses",
+      "text": "Les zones dangereuses vérifiées apparaissent sur la carte en tant que superpositions. Les utilisateurs peuvent soumettre des zones qui sont examinées par la communauté.",
+      "icon": "⚠️"
+    },
+    {
+      "title": "Alertes d'Urgence",
+      "text": "Signalez les urgences en utilisant votre position actuelle, un point sur la carte ou une adresse. Les autres utilisateurs à proximité recevront des alertes et pourront suivre les mises à jour en temps réel.",
+      "icon": "🚨"
+    },
+    {
+      "title": "Traduction Automatique",
+      "text": "Tout le contenu peut être automatiquement traduit. Appuyez pour voir le message original. Les noms, adresses et marques restent inchangés.",
+      "icon": "🌐"
+    },
+    {
+      "title": "Mobile First",
+      "text": "La plateforme est entièrement responsive et optimisée pour l'utilisation mobile.",
+      "icon": "📱"
+    },
+    {
+      "title": "Listes Globales par Catégorie",
+      "text": "Explorez des catégories telles que restaurants, hôtels et synagogues autour du centre de la carte. Filtrez et triez les résultats par distance ou évaluation.",
+      "icon": "📂"
+    },
+    {
+      "title": "Chats Thématiques",
+      "text": "Rejoignez des chats dédiés aux urgences, aux minyanim, ou pour chaque pays. Les messages restent pendant 7 jours ou jusqu'à la fin de l'urgence ou du minyan.",
+      "icon": "💭"
     }
   ],
   "footerCopyright": "© 2025 MagenTravel. Tous droits réservés.",
