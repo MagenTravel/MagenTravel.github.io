@@ -1,15 +1,29 @@
 {
-  "headerStory": "In a time when antisemitism is once again on the rise, silence is not an option. MagenTravel is a community-powered platform to ensure every Jewish traveler can explore safely—anywhere in the world.",
+  "headerStory": "In a time when antisemitism is once again on the rise, silence is not an option. MagenTravel is a community-driven platform that ensures every Jew can travel safely — anywhere in the world.",
   "headerCTA": "Pre-Register Now",
-  "feature1Title": "Real-Time Ratings",
-  "feature1Text": "Every user can rate places, drivers, restaurants or hotels on how Jewish-friendly they are—so you always know what to expect.",
-  "feature1CTA": "Pre-Register",
-  "feature2Title": "Live Field Reports",
-  "feature2Text": "All reports and experiences from the field are instantly shared in our community database—so you travel informed.",
-  "feature2CTA": "Pre-Register",
-  "feature3Title": "Location-Based Alerts",
-  "feature3Text": "Whenever someone nearby reports an antisemitic or dangerous incident, you get an immediate alert with help resources.",
-  "feature3CTA": "Pre-Register",
+  "CTA": "Pre-Register",
+  "features": [
+    {
+      "title": "Real-Time Ratings",
+      "text": "Users can rate places, drivers, restaurants, or hotels based on how Jewish-friendly they are. These insights help you choose where to stay, eat, or visit with confidence. Crowd-sourced data ensures you always know what to expect — whether you're booking a cab or selecting a neighborhood to explore.",
+      "icon": "⭐"
+    },
+    {
+      "title": "Live Field Reports",
+      "text": "Field reports shared by the community help surface incidents and share local knowledge. Whether it's an uncomfortable experience, a welcoming host, or a nearby synagogue — the community learns from each other in real time. Reports are geotagged and categorized for easy access on the map.",
+      "icon": "📝"
+    },
+    {
+      "title": "Location-Based Alerts",
+      "text": "When someone nearby reports a dangerous incident or antisemitic activity, you'll get notified instantly. Alerts come with location, report details, and resources for help — ensuring you can respond, avoid risk, or support others in need. It's proactive travel safety in your pocket.",
+      "icon": "📍"
+    },
+    {
+      "title": "Live Chats",
+      "text": "Connect instantly with other Jewish travelers nearby through live chats. Whether it's for coordinating a minyan, sharing a ride, warning about an incident, or asking for kosher food tips — real-time communication enables safety, community, and mutual support across borders.",
+      "icon": "💬"
+    }
+  ],
   "footerCopyright": "© 2025 MagenTravel. All rights reserved.",
   "footerEmailLabel": "Email",
   "footerEmail": "magentravel.futureweavers@gmail.com",

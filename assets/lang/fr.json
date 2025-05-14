@@ -1,19 +1,29 @@
 {
-  "headerStory": "À une époque où l'antisémitisme progresse, le silence n'est pas une option. MagenTravel est une plateforme communautaire conçue pour garantir à tout voyageur juif une expérience de voyage en toute sécurité—partout dans le monde.",
-  "headerCTA": "Pré-inscription",
-
-  "feature1Title": "Évaluations en temps réel",
-  "feature1Text": "Chaque utilisateur peut noter des lieux, des conducteurs, des restaurants ou des hôtels selon leur accueil des Juifs—pour que vous sachiez toujours à quoi vous attendre.",
-  "feature1CTA": "Pré-inscription",
-
-  "feature2Title": "Rapports terrain en direct",
-  "feature2Text": "Tous les rapports et expériences du terrain sont immédiatement partagés dans notre base de données communautaire—pour que vous voyagiez informé.",
-  "feature2CTA": "Pré-inscription",
-
-  "feature3Title": "Alertes géolocalisées",
-  "feature3Text": "Lorsque quelqu’un à proximité signale un incident antisémite ou dangereux, vous recevez une alerte immédiate avec des informations sur les ressources d’aide.",
-  "feature3CTA": "Pré-inscription",
-
+  "headerStory": "À une époque où l'antisémitisme est de nouveau en hausse, le silence n'est pas une option. MagenTravel est une plateforme communautaire qui garantit à chaque Juif de pouvoir voyager en sécurité — partout dans le monde.",
+  "headerCTA": "Préinscrivez-vous dès maintenant",
+  "CTA": "Préinscription",
+  "features": [
+    {
+      "title": "Évaluations en temps réel",
+      "text": "Les utilisateurs peuvent évaluer les lieux, chauffeurs, restaurants ou hôtels selon leur accueil des Juifs. Que vous cherchiez une synagogue à proximité, un restaurant avec des options casher ou un quartier sûr pour vous promener, les notations de la communauté vous aident à prendre les bonnes décisions.",
+      "icon": "⭐"
+    },
+    {
+      "title": "Rapports terrain en direct",
+      "text": "Les témoignages et expériences partagés en temps réel enrichissent notre base de données communautaire. Ces rapports vous permettent de découvrir des lieux accueillants ou, au contraire, d’éviter ceux présentant des risques — grâce à des informations fiables venues du terrain.",
+      "icon": "📝"
+    },
+    {
+      "title": "Alertes géolocalisées",
+      "text": "Lorsque quelqu’un à proximité signale un incident dangereux ou antisémite, vous recevez une alerte instantanée. Grâce à ces notifications, vous pouvez adapter vos déplacements, rester informé et accéder à des ressources utiles ou contacts locaux immédiatement.",
+      "icon": "📍"
+    },
+    {
+      "title": "Discussions en direct",
+      "text": "Des discussions instantanées sont disponibles selon votre pays, votre localisation, ou encore les besoins liés aux alertes ou à l’organisation de prières (minyan). Cela permet une coordination rapide, du soutien en temps réel et un véritable esprit communautaire — où que vous soyez.",
+      "icon": "💬"
+    }
+  ],
   "footerCopyright": "© 2025 MagenTravel. Tous droits réservés.",
   "footerEmailLabel": "Email",
   "footerEmail": "magentravel.futureweavers@gmail.com",
