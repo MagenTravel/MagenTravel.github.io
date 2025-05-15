@@ -4,26 +4,55 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MagenTravel – Global Jewish Safety</title>
+    <title>MagenTravel – Community-Powered Safety for Jewish Travelers</title>
+
     <!-- Primary Meta Tags -->
     <meta name="description"
-        content="MagenTravel is a community-powered platform ensuring every Jewish traveler can explore safely—anywhere in the world.">
+        content="MagenTravel is a community-powered platform ensuring every Jewish traveler can explore safely—anywhere in the world." />
+    <meta name="author" content="MagenTravel Team" />
+    <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Social / Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://magentravel.github.io/" />
-    <meta property="og:title" content="MagenTravel – Global Jewish Safety" />
+    <meta property="og:title" content="MagenTravel – Community-Powered Safety for Jewish Travelers" />
     <meta property="og:description"
         content="In a time when antisemitism is on the rise, silence is not an option. MagenTravel empowers Jewish travelers with real-time ratings, alerts & community support." />
     <meta property="og:image" content="https://magentravel.github.io/assets/img/magen-icon-rect.png" />
 
-    <!-- Twitter -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://magentravel.github.io/" />
-    <meta name="twitter:title" content="MagenTravel – Global Jewish Safety" />
-    <meta name="twitter:description" content="Community-powered safety for Jewish travelers, anywhere in the world." />
+    <meta name="twitter:title" content="MagenTravel – Community-Powered Safety for Jewish Travelers" />
+    <meta name="twitter:description"
+        content="Community-powered safety for Jewish travelers, anywhere in the world." />
     <meta name="twitter:image" content="https://magentravel.github.io/assets/img/magen-icon-rect.png" />
 
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://magentravel.github.io/" />
+
+    <!-- Alternate languages -->
+    <link rel="alternate" hreflang="en" href="https://magentravel.github.io/" />
+    <link rel="alternate" hreflang="fr" href="https://magentravel.github.io/fr/" />
+    <link rel="alternate" hreflang="he" href="https://magentravel.github.io/he/" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MagenTravel",
+      "url": "https://magentravel.github.io/",
+      "logo": "https://magentravel.github.io/assets/img/magen-icon-rect.png",
+      "sameAs": [
+        "https://www.linkedin.com/company/magentravel"
+      ]
+    }
+    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZ1LBF2JS3"></script>
@@ -31,9 +60,9 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-TZ1LBF2JS3');
     </script>
+
     <!-- Tailwind + custom colors -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -48,7 +77,6 @@
 
 <body class="antialiased text-gray-800 bg-gray-100 min-h-screen flex flex-col">
 
-
     <!-- HEADER -->
     <header class="bg-lightgrey relative overflow-visible">
         <!-- Language dropdown -->
@@ -62,32 +90,31 @@
 
         <!-- Centered header content -->
         <div class="max-w-4xl mx-auto px-6 py-16 flex flex-col items-center text-center space-y-6 animate-fade-in">
-            <img src="assets/img/magen-icon-rect.png" alt="MagenTravel Logo" class="w-40 drop-shadow-md" />
-
+            <img src="assets/img/magen-icon-rect.png" alt="MagenTravel circular blue logo" class="w-40 drop-shadow-md" loading="lazy" />
+            <h1 class="text-3xl font-bold text-brandDark">MagenTravel – Global Jewish Safety</h1>
             <p id="headerStory" class="text-lg text-gray-700 max-w-3xl"></p>
-
-            <a id="headerCTA" href="https://forms.gle/s3XTNU2fCi29mLNx5" target="_blank" class="inline-block px-8 py-3 bg-brandBlue text-white rounded-lg shadow-md
-             transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"></a>
+            <a id="headerCTA" href="https://forms.gle/s3XTNU2fCi29mLNx5" target="_blank"
+               class="inline-block px-8 py-3 bg-brandBlue text-white rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
+               role="button" aria-label="Join MagenTravel community now">Get Started</a>
         </div>
     </header>
 
     <!-- DYNAMIC SECTIONS -->
     <main class="flex-grow">
-    <section id="featuresContainer" class="py-16"></section>
+        <section id="featuresContainer" class="py-16"></section>
     </main>
 
     <!-- FOOTER -->
     <footer class="bg-brandBlue text-white">
         <div class="max-w-6xl mx-auto px-6 py-8 text-center space-y-2">
-            <p id="footerCopyright"></p>
+            <p id="footerCopyright">&copy; 2025 MagenTravel. All rights reserved.</p>
             <p>
-                <span id="footerEmailLabel"></span>:
-                <a id="footerEmail" href="mailto:magentravel.futureweavers@gmail.com" class="underline"></a>
+                <span id="footerEmailLabel">Email</span>:
+                <a id="footerEmail" href="mailto:magentravel.futureweavers@gmail.com" class="underline">magentravel.futureweavers@gmail.com</a>
             </p>
             <p>
-                <span id="footerLinkedInLabel"></span>:
-                <a id="footerLinkedIn" href="https://www.linkedin.com/company/magentravel" target="_blank"
-                    class="underline"></a>
+                <span id="footerLinkedInLabel">LinkedIn</span>:
+                <a id="footerLinkedIn" href="https://www.linkedin.com/company/magentravel" target="_blank" class="underline">linkedin.com/company/magentravel</a>
             </p>
         </div>
     </footer>
