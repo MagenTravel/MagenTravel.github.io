@@ -4,7 +4,12 @@ module.exports = {
     "./assets/js/**/*.js"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brandBlue: '#0057b7',
+        brandDark: '#003f88',
+      },
+    },
   },
   plugins: [],
 }
