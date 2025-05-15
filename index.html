@@ -32,15 +32,6 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://magentravel.github.io/" />
 
-    <!-- Alternate languages -->
-    <link rel="alternate" hreflang="en" href="https://magentravel.github.io/" />
-    <link rel="alternate" hreflang="fr" href="https://magentravel.github.io/fr/" />
-    <link rel="alternate" hreflang="he" href="https://magentravel.github.io/he/" />
-
-    <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
-    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
-
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
@@ -49,32 +40,104 @@
       "name": "MagenTravel",
       "url": "https://magentravel.github.io/",
       "logo": "https://magentravel.github.io/assets/img/magen-icon-rect.png",
-      "sameAs": [
-        "https://www.linkedin.com/company/magentravel"
-      ]
+      "sameAs": ["https://www.linkedin.com/company/magentravel"]
     }
     </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZ1LBF2JS3"></script>
+    <!-- Preconnect for analytics -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
+    <!-- Analytics loader (invoked after consent) -->
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-TZ1LBF2JS3');
+        function loadAnalytics() {
+            var s = document.createElement('script');
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-TZ1LBF2JS3';
+            s.async = true;
+            document.head.appendChild(s);
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-TZ1LBF2JS3', { 'anonymize_ip': true, 'cookie_domain': 'magentravel.github.io', 'cookie_flags': 'SameSite=None;Secure' });
+        }
     </script>
 
-    <!-- Tailwind + custom colors 
-    <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- Tailwind CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
-
 </head>
 
 <body class="antialiased text-gray-800 bg-gray-100 min-h-screen flex flex-col">
+    <!-- Cookie Consent Modal -->
+    <!-- Cookie Consent Modal -->
+    <div id="cookie-modal" style="
+        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.75);
+        display: none; align-items: center; justify-content: center;
+        font-family: sans-serif; z-index: 10000;
+    ">
+        <div style="
+            background: white; color: #333; max-width: 500px; width: 90%; max-height: 80%;
+            padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            display: flex; flex-direction: column;
+        " id="modal-container">
+            <!-- Initial step content -->
+            <div id="modal-body" style="margin-bottom: 1rem;">
+                <h2 style="font-size:1.25rem; margin-bottom:1rem;">Cookie Preferences</h2>
+                <p>We use cookies to enhance your browsing experience and gather essential site analytics.</p>
+                <p>You can <strong>Accept all cookies</strong> to help us improve the site, or choose to
+                    <strong>Customize</strong> your preferences.</p>
+            </div>
+            <div id="modal-actions" style="display:flex; justify-content:flex-end; gap:0.5rem;">
+                <button id="modal-customize"
+                    style="padding:0.75rem 1.5rem; background:#ccc; border:none; color:#333; cursor:pointer; border-radius:4px;">Customize</button>
+                <button id="modal-accept"
+                    style="padding:0.75rem 1.5rem; background:#0057b7; border:none; color:white; cursor:pointer; border-radius:4px;">Accept
+                    Cookies</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            var modal = document.getElementById('cookie-modal');
+            var body = document.body;
+            var consent = localStorage.getItem('cookieConsent');
+            function showModal() { modal.style.display = 'flex'; body.style.overflow = 'hidden'; }
+            function hideModal() { modal.style.display = 'none'; body.style.overflow = ''; }
+
+            if (consent === 'yes') { loadAnalytics(); }
+            else if (consent === 'denied') { /* nothing */ }
+            else { showModal(); }
+
+            var acceptBtn = document.getElementById('modal-accept');
+            var customizeBtn = document.getElementById('modal-customize');
+
+            acceptBtn.addEventListener('click', function () {
+                localStorage.setItem('cookieConsent', 'yes');
+                hideModal();
+                loadAnalytics();
+            });
+
+            customizeBtn.addEventListener('click', function () {
+                var container = document.getElementById('modal-container');
+                container.innerHTML = '\n                <div id="custom-body" style="overflow-y:auto; flex-grow:1; margin-bottom:1rem;">\n                    <h2 style="font-size:1.25rem; margin-bottom:1rem;">About Cookies on MagenTravel</h2>\n                    <p>Cookies are small text files placed on your device by websites you visit. They store information to improve your experience and provide essential analytics.</p>\n                    <ul style="margin-left:1rem; margin-bottom:1rem;">\n                        <li><strong>_ga</strong>: Distinguishes unique users by assigning a random client ID. Expires after 2 years.</li>\n                        <li><strong>_gid</strong>: Stores and updates a unique value for each page visited. Expires after 24 hours.</li>\n                        <li><strong>_gat</strong>: Used to throttle request rate. Expires after 1 minute.</li>\n                    </ul>\n                    <p>These cookies collect anonymous data such as:</p>\n                    <ul style="margin-left:1rem; margin-bottom:1rem;">\n                        <li>Pageviews and session duration</li>\n                        <li>Referring site and traffic source</li>\n                        <li>Device type, browser, and geographic region</li>\n                    </ul>\n                    <p>No personal data (like names or email addresses) is collected or stored. All cookies are first-party, set under <code>magentravel.github.io</code>, marked Secure, and use <code>SameSite=None</code>.</p>\n                    <p>This information helps us understand how visitors interact with our content so we can improve performance, usability, and content relevance over time.</p>\n                    <p style="margin-top:2rem; font-style:italic;">Scroll to the bottom to continue without cookies if you choose not to be tracked.</p>\n                    <div style="height:200px;"></div>\n                </div>\n                <div id="custom-actions" style="display:flex; justify-content:flex-end; gap:0.5rem;">\n                    <button id="custom-accept" style="padding:0.75rem 1.5rem; background:#0057b7; border:none; color:white; cursor:pointer; border-radius:4px;">Accept Cookies</button>\n                    <button id="custom-decline" style="padding:0.75rem 1.5rem; background:#ccc; border:none; color:#333; cursor:pointer; border-radius:4px; display:none;">Continue without Cookies</button>\n                </div>';
+                var customBody = document.getElementById('custom-body');
+                var customDecline = document.getElementById('custom-decline');
+                var customAccept = document.getElementById('custom-accept');
+                customBody.addEventListener('scroll', function () {
+                    if (customBody.scrollTop + customBody.clientHeight >= customBody.scrollHeight) {
+                        customDecline.style.display = 'inline-block';
+                    }
+                });
+                customAccept.addEventListener('click', function () { localStorage.setItem('cookieConsent', 'yes'); hideModal(); loadAnalytics(); });
+                customDecline.addEventListener('click', function(){ sessionStorage.setItem('cookieDenied','true'); hideModal(); });
+            });
+        })();
+    </script>
 
     <!-- HEADER -->
     <header class="bg-lightgrey relative overflow-visible">
-        <!-- Language dropdown -->
         <div class="absolute top-4 right-4 z-50">
             <select onchange="switchLanguage(this.value)" class="px-4 py-2 text-base border rounded bg-white shadow-sm">
                 <option value="en">EN</option>
@@ -82,18 +145,19 @@
                 <option value="fr">FR</option>
             </select>
         </div>
-
-        <!-- Centered header content -->
         <div class="max-w-4xl mx-auto px-6 py-16 flex flex-col items-center text-center space-y-6 animate-fade-in">
             <img src="assets/img/magen-icon-rect.png" alt="MagenTravel circular blue logo" class="w-40 drop-shadow-md"
                 loading="lazy" />
             <h1 class="text-3xl font-bold text-brandDark">MagenTravel – Global Jewish Safety</h1>
-            <p id="headerStory" class="text-lg text-gray-700 max-w-3xl"></p>
+            <p id="headerStory" class="text-lg text-gray-700 max-w-3xl">In a time when antisemitism is once again on the
+                rise, silence is not an option. MagenTravel is a community-powered platform that ensures every Jew can
+                travel safely—anywhere in the world.</p>
             <a id="headerCTA" href="https://forms.gle/s3XTNU2fCi29mLNx5" target="_blank"
                 class="inline-block px-8 py-3 bg-brandBlue text-white rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
                 role="button" aria-label="Join MagenTravel community now">Get Started</a>
         </div>
     </header>
+
 
     <!-- DYNAMIC SECTIONS -->
     <main class="flex-grow">
@@ -282,5 +346,6 @@
     <script defer src="assets/js/translation.js"></script>
     <script defer src="assets/js/main.js"></script>
 </body>
+
 
 </html>
