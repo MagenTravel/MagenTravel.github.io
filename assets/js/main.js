@@ -120,7 +120,7 @@ function switchLanguage(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  switchLanguage("en");
+  //switchLanguage("en");
 });
 
 window.applyTranslations = applyTranslations;
