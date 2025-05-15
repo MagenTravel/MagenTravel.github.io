@@ -20,14 +20,14 @@
     <meta property="og:title" content="MagenTravel – Community-Powered Safety for Jewish Travelers" />
     <meta property="og:description"
         content="In a time when antisemitism is on the rise, silence is not an option. MagenTravel empowers Jewish travelers with real-time ratings, alerts & community support." />
-    <meta property="og:image" content="https://magentravel.github.io/assets/img/magen-icon-rect.png" />
+    <meta property="og:image" content="https://magentravel.github.io/assets/img/magen-icon-rect.webp" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://magentravel.github.io/" />
     <meta name="twitter:title" content="MagenTravel – Community-Powered Safety for Jewish Travelers" />
     <meta name="twitter:description" content="Community-powered safety for Jewish travelers, anywhere in the world." />
-    <meta name="twitter:image" content="https://magentravel.github.io/assets/img/magen-icon-rect.png" />
+    <meta name="twitter:image" content="https://magentravel.github.io/assets/img/magen-icon-rect.webp" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://magentravel.github.io/" />
@@ -39,7 +39,7 @@
       "@type": "Organization",
       "name": "MagenTravel",
       "url": "https://magentravel.github.io/",
-      "logo": "https://magentravel.github.io/assets/img/magen-icon-rect.png",
+      "logo": "https://magentravel.github.io/assets/img/magen-icon-rect.webp",
       "sameAs": ["https://www.linkedin.com/company/magentravel"]
     }
     </script>
@@ -86,7 +86,8 @@
                 <h2 style="font-size:1.25rem; margin-bottom:1rem;">Cookie Preferences</h2>
                 <p>We use cookies to enhance your browsing experience and gather essential site analytics.</p>
                 <p>You can <strong>Accept all cookies</strong> to help us improve the site, or choose to
-                    <strong>Customize</strong> your preferences.</p>
+                    <strong>Customize</strong> your preferences.
+                </p>
             </div>
             <div id="modal-actions" style="display:flex; justify-content:flex-end; gap:0.5rem;">
                 <button id="modal-customize"
@@ -131,7 +132,7 @@
                     }
                 });
                 customAccept.addEventListener('click', function () { localStorage.setItem('cookieConsent', 'yes'); hideModal(); loadAnalytics(); });
-                customDecline.addEventListener('click', function(){ sessionStorage.setItem('cookieDenied','true'); hideModal(); });
+                customDecline.addEventListener('click', function () { sessionStorage.setItem('cookieDenied', 'true'); hideModal(); });
             });
         })();
     </script>
@@ -146,8 +147,12 @@
             </select>
         </div>
         <div class="max-w-4xl mx-auto px-6 py-16 flex flex-col items-center text-center space-y-6 animate-fade-in">
-            <img src="assets/img/magen-icon-rect.png" alt="MagenTravel circular blue logo" class="w-40 drop-shadow-md"
-                loading="lazy" />
+            <img
+                src="assets/img/magen-icon-rect.webp"
+                alt="MagenTravel circular blue logo"
+                class="w-40 drop-shadow-md"
+                loading="lazy"
+            />
             <h1 class="text-3xl font-bold text-brandDark">MagenTravel – Global Jewish Safety</h1>
             <p id="headerStory" class="text-lg text-gray-700 max-w-3xl">In a time when antisemitism is once again on the
                 rise, silence is not an option. MagenTravel is a community-powered platform that ensures every Jew can
