@@ -142,19 +142,21 @@
     <!-- HEADER -->
     <header class="bg-lightgrey relative overflow-visible">
         <div class="absolute top-4 right-4 z-50">
-            <select onchange="switchLanguage(this.value)" class="px-4 py-2 text-base border rounded bg-white shadow-sm">
-                <option value="en">EN</option>
-                <option value="he">HE</option>
-                <option value="fr">FR</option>
+            <label for="language-select" class="sr-only">
+                <span class="text-3xl mr-2" role="img" aria-label="globe">🌐</span>
+            </label>
+            <select id="language-select" onchange="switchLanguage(this.value)"
+                class="px-4 py-2 text-base border rounded bg-white shadow-sm">
+                France 🇫🇷🇺🇲🇮🇱
+                <option value="en">🇪🇳 English</option>
+                <option value="he">🇮🇱 עברית</option>
+                <option value="fr">🇫🇷 Français</option>
             </select>
         </div>
+
         <div class="max-w-4xl mx-auto px-6 py-16 flex flex-col items-center text-center space-y-6 animate-fade-in">
-            <img
-                src="assets/img/magen-icon-rect.webp"
-                alt="MagenTravel circular blue logo"
-                class="w-40 drop-shadow-md"
-                loading="lazy"
-            />
+            <img src="assets/img/magen-icon-rect.webp" alt="MagenTravel circular blue logo" class="w-40 drop-shadow-md"
+                loading="lazy" />
             <h1 class="text-3xl font-bold text-brandDark">MagenTravel – Global Jewish Safety</h1>
             <p id="headerStory" class="text-lg text-gray-700 max-w-3xl">In a time when antisemitism is once again on the
                 rise, silence is not an option. MagenTravel is a community-powered platform that ensures every Jew can
